@@ -248,6 +248,11 @@ $korebuildPath = Get-KoreBuild
 # Project selection
 if ($All) {
     $MSBuildArguments += '/p:BuildAllProjects=true'
+    $BuildManaged = $true
+    $BuildNative = $true
+    $BuildNodeJS = $true
+    $BuildJava = $true
+    $BuildInstallers = $true
 }
 elseif ($Projects) {
     if (![System.IO.Path]::IsPathRooted($Projects))

@@ -29,13 +29,6 @@
     <SharedSourcesFolder>$(RepoRoot)src\Shared\</SharedSourcesFolder>
   </PropertyGroup>
 
-  <PropertyGroup Condition=" '$(BuildAllProjects)' == 'true' ">
-    <BuildNative>true</BuildNative>
-    <BuildManaged>true</BuildManaged>
-    <BuildNodeJS>true</BuildNodeJS>
-    <BuildJava>true</BuildJava>
-  </PropertyGroup>
-
   <!-- These projects are always excluded, even when -projects is specified on command line. -->
   <ItemGroup>
 
